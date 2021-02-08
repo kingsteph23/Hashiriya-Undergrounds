@@ -1,0 +1,175 @@
+# Stage 1 beggining(Wangen sen)
+city = input("Wonderful choice " + playa + ". I see you got style.."
+                                           "\nWelcome to Tokyo, Japan.  This stage will have 3 stages.Each with their own storyline."
+                                           "\nThe Wangan sen stage, the C1 inner stage, and the Tokyo bay aqualine."
+                                           "\nWe will start with the Wangan sen stage.  As you progress. You will be able to access other stages."
+                                           "\nRemember, each choice you make will lead to a different outcome."
+                                           "\noh and you'll start off with  ¥600000"
+                                           "\nAre you ready?"
+                                           "\nyes"
+                                           "\nno"
+                                           "\n:")
+
+if city == "yes":
+    print("Alrighty, onto stage 1 than")
+else:
+    print("We still going G. Hehehe.")
+print()
+# Toll booths/start of stage 1
+yen = 600000
+
+# Course 1 description
+input("Current Balance: ¥" + str(yen))
+input("Course name:Bayshore route(Wangen sen)"
+      "\nTotal Length:43 Miles(70 km)"
+      "\nCompleted Construction:1976"
+      "\nThe legendary Bayshore route(湾岸線,Shuto Kōsokudōro Wangan-sen)..commonly known by the locals as the Wangan sen"
+      "\nA 43 mile stretch of highway which connects Tokyo to Yokohama."
+      "\nBy day, its busy as hell, but by night, is the hub of street races by Hashiriya(走り屋)"
+      "\nThis is due to the route containing long stretches and emptiness as night. "
+      "\nThis route known for the infamous Midnight club races which took place in the 90s"
+      "\nThe infamous street racing group who only did max velocity, and pushed their cars to the limit.")
+print()
+print()
+Bayshore = input("While crusin in your " + market + " " + JDM + " you arrive at a toll booth,and "
+                                                                "\nDepending on the type of car you are required to pay a different type of amount. "
+                                                                "\nFollowing prices are listed below "
+                                                                "\nShuto Expressway Bayshore Route Toll Booth:"
+                                                                "\nNormal cars:  3,000JPY"
+                                                                "\nMidsize cars: 3,600JPY"
+                                                                "\nLarge cars:   4,950JPY"
+                                                                "\nSpecific large cars:  8,250JPY"
+                                                                "\nKei-cars and motorcycles: 2,400JPY"
+                                                                "\nNote:Kei cars are just mini cars"
+                                                                "\nWhat type of car do you have?"
+                                                                "\nNormal car"
+                                                                "\nMidsize car"
+                                                                "\nLarge car"
+                                                                "\nSpecific large car"
+                                                                "\nKei-car"
+                                                                "\n:")
+# Decrease in yen. you just payed toll booth
+
+if Bayshore == "Normal car":
+    yen -= 3000
+if Bayshore == "Midsize car":
+    yen -= 3600
+if Bayshore == "Large car":
+    yen -= 4950
+elif Bayshore == "Specific large car":
+    yen -= 8250
+elif Bayshore == "Kei-car":
+    yen -= 2400
+
+Bayshore = input("Current Balance: ¥" + str(yen))
+dajou = input("As you cruise in your  " + market + " " + JDM + ", "
+                                                               "\nyou notice another Hashriya driving."
+                                                               "\nYou are thinking about challenging him."
+                                                               "\nHe flickers at you and wishes to challenge you... "
+                                                               "\nDo you...."
+                                                               "\nAccept the challenge"
+                                                               "\nPretend he isn't there, and go about your way"
+                                                               "\n:")
+print()
+print()
+# Option 1(Challenge 1)
+if dajou == "Accept the challenge":
+    print("ITS ON, the last one to Yokohama bay bridge loses. Ikuzo")
+else:
+    print("The challenge still stands....Last one to Yokohama Bay bridge loses..."
+          "\nOnce the timer ends, the race begins. ")
+    print()
+    #   Countdown
+    x = 10
+    while x > 0:
+        print(x)
+        x -= 1
+        print()
+    print("GO!")
+# Option 2 Cop Shows up
+input("A intense head to head taking place along the Kanegawa tunnel."
+      "\nOne moment your ahead, the other moment, your opponent is ahead."
+      "\nPushing your  " + market + " " + JDM + " to the limit"
+                                                "\nHowever, this intense head to head is brought to a halt once you exit out the tunnel..."
+                                                "\nYou spot  a black and white Toyota crown police car!🚔🚔"
+                                                "\nSirens start wailing."
+                                                "\nBecause  you don't want to get into more trouble. You decide to pull over.")
+
+# Pull over result
+input("👮‍️-Good " + TOD + ".")
+print()
+input("you- Good " + TOD + " officer.")
+print()
+input("SGT Yoshida- I am Sergeant Yoshida. Im a currently part of the traffic bureau((交通部))"
+      "\nof the  Tokyo Metropolitan Police(警視庁)")
+print()
+input("you- Really? Well what did I do Officer")
+print()
+input("SGT Yoshida- Sir you were going pulling a 160 MPH Speed run on the Wangan sen.")
+print()
+input("you- How is that a problem....")
+print()
+input("SGT Yoshida- The speed limit is 50 mph......")
+print()
+input("Anyway, I must fine you ¥15000 for a speeding violation.")
+# Pull over actual choices
+osaka = input("\nWhile the cop goes to his vehicle"
+              "\nYou have a choice of either escaping or just staying"
+              "\nDo you...... escape or stay?"
+              "\n:")
+if osaka == "stay":
+    print("Sergeant Yoshida- Okay Sir, this just  a warning, if you are found street racing again, you might be arrested"
+          "\nand  your car can potentially become in possession of the Tokyo Metropolitan Police.")
+    input("you- Understood Officer."
+          "\nyou- Have a wonderful " + TOD + " officer."
+                                               "\nAnyway you pay the fine, and go about you way."
+                                               "\nGAME OVER")
+    yen -= 15000
+    osaka = input("Current Balance: ¥" + str(yen))
+    exit()
+elif osaka == "escape":
+    print("Unit 4, Suspect is attempting a escape on the Wangan sen!!"
+          "\nRequesting backup!!")
+print()
+chase = input("Now the chase is on because for some reason you still want to race..."
+              "\nbut other than that, some sirens are coming at ya"
+              "\nand now you see two exits, in which one of them is a life saver"
+              "\nexit 7 leads to Haneda airport"
+              "\nexit 8 leads to yokohama bay bridge, and leads to the city of Yokohama"
+              "\nChoose a exit, and remember, choose wisely...."
+              "\nexit 7"
+              "\nexit 8"
+              "\n:")
+if chase == "exit 7":
+    chase = input("Turn off you car, stay where you are! Driver, you are under arrest."
+                  "\nDamn, you've been busted.  There was a roadblock at the airport waiting for you"
+                  "\nTip:Never go to a airport during a pursuit. Thats just dumb"
+                  "\nBusted. Game over")
+    exit()
+if chase == "exit 8":
+    print("Ehhh, he gave me the slip. I've lost him, breaking pursuit.")
+    print()
+selector = input("Bueno.You have evaded arrest, but now you must swap your car or you'll get caught"
+                 "\nYou recieve a phone call from your friend Hiroshi,"
+                 "\n. 📱 Hiroshi- Yo, "+playa+", wanna meet up at Daikoku parking lot?"
+                 "\nDo you accept?"
+                 "\naccept"
+                 "\ndeny"
+                 "\n:")
+if selector == "deny":
+    print("\n. 📱Hiroshi- maybe another time"
+          "\n. 📱you- Yeah, maybe another time...."
+          "\nThank you for playing my game..Have a wonderful day " + playa + "!!")
+    exit()
+else:
+    stage3 = input("Are you sure you wish to proceed to Stage 2 of Hashriya Undergrounds"
+                   "\nyes"
+                   "\nno"
+                   "\n:")
+if stage3 == "no":
+    print(".Hiroshi- maybe another time"
+          "\n.you- Yeah, maybe another time...."
+          "Thank you for playing my game..Have a wonderful day " + playa + "!!")
+    exit()
+else:
+    print("Welcome to Stage 2:C1 Inner Loop.")
